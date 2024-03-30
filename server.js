@@ -9,9 +9,7 @@ app.use(express.json({ extended: false }));
 
 app.use('/api/usage', require('./routes/usage'));
 app.use('/api/products', require('./routes/products'));
-app.use('/api/init', require('./routes/init'));
-app.use('/api/inventory', require('./routes/get'));
-app.use('/api/inventory', require('./routes/add'));
+app.use('/api/inventory', require('./routes/inventory'));
 
 
 const PORT = process.env.PORT || 5000;

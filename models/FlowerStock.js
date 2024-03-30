@@ -5,7 +5,10 @@ const FlowerStock = mongoose.Schema({
         type:String,
         unique:false
     },
-    flowerId: String,
+    flowerId: {
+        type:String,
+        unique:true
+    },
     quantityInStock: Number
 });
 
